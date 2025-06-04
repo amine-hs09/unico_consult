@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ seo_title }}</title>
+    <meta name="description" content="{{ seo_description }}">
+</head>
+<body>
+    {% block content %}{% endblock %}
+    <footer>
+        <ul>
+            <li><a href="{{ facebook_url }}">Facebook</a></li>
+            <li><a href="{{ linkedin_url }}">LinkedIn</a></li>
+            <li><a href="{{ twitter_url }}">Twitter</a></li>
+            <li><a href="{{ instagram_url }}">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

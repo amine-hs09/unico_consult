@@ -1,0 +1,12 @@
+<h1>Messages</h1>
+<table>
+  <tr><th>Subject</th><th>Status</th><th>Actions</th></tr>
+  {% for m in messages %}
+  <tr>
+    <td>{{ m.subject }}</td>
+    <td>{{ m.get_status_display }}</td>
+    <td><a href="{% url 'message_update' m.pk %}">Edit</a></td>
+  </tr>
+  {% endfor %}
+</table>
+<a href="{% url 'export_messages_csv' %}">Export CSV</a>

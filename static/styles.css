@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin: 2em; }
+header { text-align: center; margin-bottom: 2em; }
+.slogan { font-size: 1.2em; margin: 1em 0; }
+.btn { padding: 0.5em 1em; margin-right: 1em; background: #008cba; color: #fff; text-decoration: none; }
+.services, .team { list-style: none; padding: 0; }
+.services li, .team li { margin: 0.5em 0; }

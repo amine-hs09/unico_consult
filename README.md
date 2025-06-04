@@ -1,8 +1,15 @@
 # Unico Consult
 
-This project is a basic Django setup. It includes separate directories for frontend templates, an admin portal, and static assets.
+This repository provides simple HTML templates and a lightweight Python server.
 
-- `templates/` holds all HTML templates for the frontend.
-- `admin_portal/` contains files for the admin interface.
-- `static/` stores static resources like CSS and JavaScript.
+- `templates/` contains the website pages including the home page, services, team, testimonials and contact form.
+- `static/` contains a small CSS stylesheet.
+- `server.py` runs a minimal HTTP server that stores contact form submissions in `contact_messages.json` and attempts to email them using SMTP settings from the environment.
 
+Run the server with:
+
+```bash
+python3 server.py
+```
+
+Then open `http://localhost:8000/index.html` in your browser.

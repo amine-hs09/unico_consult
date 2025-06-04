@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ object.subject }}</h1>
+<p>From: {{ object.name }} ({{ object.email }})</p>
+<p>Status: {{ object.status }}</p>
+<p>{{ object.message }}</p>
+<a href="{% url 'clientmessage_update' object.pk %}">Edit</a> |
+<a href="{% url 'clientmessage_delete' object.pk %}">Delete</a>
+{% endblock %}

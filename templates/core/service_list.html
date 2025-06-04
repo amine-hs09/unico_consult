@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Services</h1>
+<a href="{% url 'service_create' %}">Create Service</a>
+<ul>
+{% for service in object_list %}
+    <li><a href="{% url 'service_detail' service.pk %}">{{ service.type }}</a></li>
+{% empty %}
+    <li>No services.</li>
+{% endfor %}
+</ul>
+{% endblock %}
